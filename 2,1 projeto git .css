@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+ * {
+      font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight:weight;
+      font-style: normal;
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+}
+
+.caixa {width:87vw;
+        height:80vh;
+       
+}
+
+.caixa-1 {display:inline-block;
+          width:60%;
+          margin-top:240px;
+          margin-left:120px;
+          
+}
+
+.caixa-2 {display:inline-block;
+          background-color:rgba(93,93,125,0.12);
+          height:100vh;
+          position:absolute;
+          width:40%;
+}
+
+img {position:relative;
+     top:70px;
+     right:120px;
+}
+
+h1 {font-size:50px;
+    color:rgba(173,173,234,255);
+    font-weight:800;
+    width:368px;
+    margin-bottom:14px;
+}
+
+p {color:rgb(7, 7, 7);
+   font-size:19px;
+   font-weight:600;
+   opacity:0.6;
+   width:440px;
+   margin-bottom:18px;
+}
+
+button {background-color:rgba(86,85,126,255);
+        color:white;
+        font-size:20px;
+        width:150px;
+        height:35px;
+        font-weight:900;
+        border:none;
+        border-radius:15px;
+        cursor:pointer;
+}
+
+button:hover {opacity:0.7;}
+button:active {opacity:0.4}
+
+a {color:rgb(32, 32, 32);
+   font-size:23px;
+   cursor:pointer;
+   margin-right:40px;
+   text-decoration: none;
+}
+
+a:hover {opacity:0.5;}
+a:active {opacity:0.2;}
+
+header {margin-top:20px;
+        margin-left:80px;
+}
+
+@media screen and (max-width:900px) {
+
+        .caixa {width:100%;
+                height:50%}
+
+        .caixa-1 {width:100%;
+                height:50%;
+                margin:0;
+                padding:0;}
+
+        .caixa-2 {display:block;
+                  height:73%; /*auto= se adapita au espaso que tiver.*/
+                  width:100%;
+                  position:static;
+                  padding:40px;
+                  margin-top:80px;}
+
+        img {position:static; 
+             width:320px;}
+
+        header {display: none} /*para desaparecer com alguma coisa basta colocar position:none;*/
+
+        h1 {font-size:35px; 
+            width:auto;
+            margin: 58px 50px 0 50px;
+            text-align: center;
+        }
+
+        p {margin:18px 40px;
+           width:auto;
+           text-align:center;
+           font-size:14px;}
+
+        button {margin: 0 auto;
+                display:block;
+                margin-top:30px;
+                width:150px;
+                height:40px;
+                font-size:20px;} /*para centralisar o botão vc deve usar esatamente assim "sem contar com a margin*/
+}
